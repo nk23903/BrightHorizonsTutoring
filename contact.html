@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Bright Horizons Tutoring</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="sky-background">
+    <div class="sun"></div>
+    <div class="cloud cloud-1"></div>
+    <div class="cloud cloud-2"></div>
+    <div class="cloud cloud-3"></div>
+  </div>
+
+  <header class="site-header">
+    <div class="brand">
+      <h1>Bright Horizons Tutoring</h1>
+      <p>Specializing in Reading &amp; Math</p>
+    </div>
+    <nav class="topnav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+      <a href="reviews.html">Reviews</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Contact Us</h2>
+    <p>
+      Have questions or ready to get started? Share a little bit about your learner and we’ll follow up
+      with recommended next steps and available session times.
+    </p>
+
+    <form class="form" onsubmit="event.preventDefault(); alert('Thanks! We will reply shortly.');">
+      <label for="name">Your Name</label>
+      <input id="name" name="name" type="text" placeholder="Your name" required />
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+      <label for="phone">Phone (optional)</label>
+      <input id="phone" name="phone" type="tel" placeholder="(555) 123-4567" />
+
+      <p style="margin-top:1rem; font-weight:600;">
+        Tell us a bit about your student:
+      </p>
+
+      <label for="grade">Student’s Grade</label>
+      <select id="grade" name="grade" required>
+        <option value="" disabled selected>Select a grade range</option>
+        <option value="K-1">Kindergarten–1st</option>
+        <option value="2-3">2nd–3rd</option>
+        <option value="4-5">4th–5th</option>
+        <option value="6-8">6th–8th</option>
+        <option value="9-12">9th–12th</option>
+      </select>
+
+      <label for="subjects">Subject Selection 
+        <span style="font-weight:400; font-size:0.85rem;">
+          (hold Ctrl or Command to select multiple)
+        </span>
+      </label>
+      <select id="subjects" name="subjects[]" multiple size="6" required>
+        <optgroup label="Math">
+          <option value="elem-math">Elementary Math (K–5)</option>
+          <option value="middle-math">Middle School Math (6–8)</option>
+          <option value="algebra1">Algebra I</option>
+          <option value="algebra2">Algebra II</option>
+          <option value="geometry">Geometry</option>
+          <option value="precalc">Pre-Calculus / Foundations</option>
+        </optgroup>
+        <optgroup label="Reading">
+          <option value="early-reading">Early Reading &amp; Phonics</option>
+          <option value="growing-reading">Growing Readers (Comprehension &amp; Fluency)</option>
+          <option value="ms-hs-reading">Middle &amp; High School Reading / Writing</option>
+        </optgroup>
+      </select>
+
+      <label for="message">Anything else you’d like us to know?</label>
+      <textarea id="message" name="message" rows="5" placeholder="Share your student’s strengths, challenges, or goals." required></textarea>
+
+      <button class="cta" type="submit">Submit Inquiry</button>
+    </form>
+
+    <aside class="card" style="margin-top:1.25rem;">
+      <h3>Quick Info</h3>
+      <p>Email: hello@brighthorizonstutoring.com</p>
+      <p>Phone: (555) 123-4567</p>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 BrightHorizonsTutoring.com • We’ll be in touch soon.</p>
+  </footer>
+</body>
+</html>
